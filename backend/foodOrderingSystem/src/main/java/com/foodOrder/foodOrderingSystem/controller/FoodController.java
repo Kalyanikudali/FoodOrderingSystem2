@@ -17,7 +17,7 @@ import com.foodOrder.foodOrderingSystem.service.FoodService;
 
 @RestController
 @RequestMapping("/foods")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 
 public class FoodController {
 	 @Autowired
