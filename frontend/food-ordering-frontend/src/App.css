@@ -235,3 +235,32 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
+
+.backend-status-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px auto 0 auto;
+}
+
+.backend-status-banner.success {
+    background-color: #e6f4ea;
+    color: #137333;
+    border: 1px solid #ceead6;
+}
+
+.backend-status-banner.error {
+    background-color: #fce8e6;
+    color: #c5221f;
+    border: 1px solid #fad2cf;
+}
+
+.backend-status-banner.loading {
+    background-color: #f1f3f4;
+    color: #5f6368;
+    border: 1px solid #dadce0;
+}
