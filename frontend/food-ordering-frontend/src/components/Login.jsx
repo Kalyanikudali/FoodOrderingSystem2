@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { API_BASE_URL } from '../config';
 
 function Login() {
 
@@ -20,7 +21,7 @@ function Login() {
 
         try {
             const response = await fetch(
-                'http://localhost:9292/customers/login',
+                `${API_BASE_URL}/customers/login`,
                 {
                     method: 'POST',
                     headers: {

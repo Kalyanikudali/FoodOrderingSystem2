@@ -14,8 +14,8 @@ WORKDIR /app
 # Copy the built jar
 COPY --from=build /app/target/*.jar app.jar
 
-# Render assigns port dynamically
-EXPOSE 2000
+# Render assigns port dynamically via the PORT environment variable
+EXPOSE 9292 10000
 
 # Start the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
